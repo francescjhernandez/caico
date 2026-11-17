@@ -1,0 +1,358 @@
+titulo: "Base de Conocimiento: Educación en el Municipio de Caicó (RN, Brasil)" codigo_ibge: "2402006" uf: "Rio Grande do Norte (RN)" mesorregion: "Central Potiguar / Seridó Ocidental" idioma_documento: "Español (nombres propios, siglas e indicadores mantenidos en portugués)" fecha_compilacion: "2026-11-17" proposito: "Base de conocimiento estructurada (RAG / System Prompt) para Agente de IA"
+Sistema Educativo del Municipio de Caicó (RN, Brasil)
+0. Metadatos, Etiquetas de Confianza y Reglas de Uso para el Agente IA
+0.1 Etiquetas de Confianza
+[ALTA]: Cifra leída directamente en una fuente oficial o primaria (IBGE, Inep/MEC, UFRN, UERN, IFRN, Prefeitura de Caicó) o en una publicación que la reproduce con exactitud.
+[MEDIA]: Fuente secundaria (prensa regional, agregador, artículo académico) que cita un dato oficial; o fuente primaria cuyo contexto exacto (año, red de enseñanza o definición) requiere confirmación.
+[BAJA]: Dato ambiguo, de año incierto, procedente de agregadores comerciales o entornos de prueba, o no contrastado con fuentes oficiales.
+0.2 Limitaciones Técnicas de la Compilación
+Los portales IBGE Cidades, QEdu e Inep aplican bloqueos anti-bot a descargas automatizadas; varias cifras procedentes de dichos portales provienen de fragmentos indexados (snippets) y deben verificarse en la fuente primaria antes de citarse en informes formales.
+0.3 Reglas Operativas Obligatorias para el Agente
+1. Cero alucinaciones: No inventar ni extrapolar cifras. Si un dato no figura en esta base o aparece en la Sección 10 (Lagunas), responder "No disponible en esta base" y remitir a las fuentes primarias de la Sección 12.
+2. Trazabilidad completa: Citar siempre año, red de enseñanza (municipal / estadual / federal / privada / pública / total) y fuente de cada cifra.
+3. No mezclar series incompatibles: No comparar cifras de redes o años distintos como si fueran equivalentes (ver Sección 9: Discrepancias).
+4. Vigencia temporal: Los indicadores cambian periódicamente (Ideb cada 2 años, Censo Escolar cada año). Para consultas en tiempo real sobre convocatorias o resultados posteriores a esta compilación, dirigir al usuario a los portales vivos de la Sección 12.
+1. Contexto Demográfico, Territorial y Socioeconómico
+Caicó es el principal polo urbano, económico y educativo de la región del Seridó Potiguar, ubicado en el interior del estado de Río Grande del Norte (a ~280 km de Natal). Su ecosistema educativo atiende tanto a la población local como a estudiantes de municipios vecinos de RN y Paraíba.
+Fuente principal: IBGE Cidades (https://cidades.ibge.gov.br/brasil/rn/caico/panorama y https://www.ibge.gov.br/cidades-e-estados/rn/caico.html).
+Indicador
+Valor
+Año
+Confianza
+Población (Censo Demográfico)
+61.146 habitantes
+2022
+[ALTA]
+Población estimada
+63.338 habitantes
+2025/2026 (fragmentos divergen en el año)
+[MEDIA]
+Área territorial
+1.228,583 km²
+2025
+[ALTA]
+Densidad demográfica
+49,77 hab/km²
+2022
+[ALTA]
+Posición en RN (población / densidad)
+8.º / 57.º de 167 municipios
+2022
+[ALTA]
+Posición en RN (área territorial)
+5.º de 167 municipios
+2025
+[ALTA]
+IDHM (Índice de Desarrollo Humano Municipal)
+0,710 (Alto)
+2010
+[ALTA]
+Población con renta per cápita $\le \frac{1}{2}$ salario mínimo
+37,9 %
+2010
+[ALTA]
+Salario medio mensual (trabajadores formales)
+1,7 salarios mínimos
+2023
+[ALTA]
+Población quilombola / indígena
+15 / 53 personas
+2022
+[ALTA]
+Prefeito (Alcalde)
+Judas Tadeu Alves dos Santos
+2025 (mandato 2025-2028 según agregador)
+[ALTA] nombre / [MEDIA] mandato
+Observación demográfica cualitativa [MEDIA]: Comunicación académica señala retracción de la población joven en Caicó durante los últimos ~15 años (https://static.even3.com/anais/1250240.pdf).
+2. Estructura Normativa de la Educación Básica en Brasil
+Conforme a la Ley de Directrices y Bases de la Educación Nacional (LDB - Ley n.º 9.394/1996) y la Base Nacional Comum Curricular (BNCC), la Educación Básica obligatoria abarca de los 4 a los 17 años:
+1. Educação Infantil (0 a 5 años):
+Creche (0 a 3 años): Etapa no obligatoria para las familias, de oferta obligatoria por el municipio según demanda.
+Pré-escola (4 a 5 años): Obligatoria por ley. Competencia prioritaria del Municipio.
+2. Ensino Fundamental (6 a 14 años — 9 años de duración — Obligatorio):
+Anos Iniciais (1.º al 5.º año / 6 a 10 años): Equivalente a Educación Primaria. Competencia prioritaria del Municipio.
+Anos Finais (6.º al 9.º año / 11 a 14 años): Equivalente a Primaria superior / Secundaria básica. Competencia compartida entre Municipio y Estado.
+3. Ensino Médio (15 a 17 años — 3 años de duración — Obligatorio):
+Equivalente a Bachillerato / Secundaria Superior obligatoria (modalidad regular, tiempo integral y técnico integrado). Competencia prioritaria del Estado (Gobierno de RN) y Red Federal (IFRN).
+3. Resultados Educativos e Indicadores Oficiales
+3.1 Escolarización
+Tasa de escolarización de 6 a 14 años: 98,92 % (Censo IBGE 2022) [ALTA]. Fuente: https://cidades.ibge.gov.br/brasil/rn/caico/panorama.
+3.2 Ideb (Índice de Desenvolvimento da Educação Básica)
+Definición: Media de las notas estandarizadas de Saeb (Lengua Portuguesa y Matemática) multiplicada por la tasa de aprobación del Censo Escolar (escala de 0 a 10, publicación bienal). Los resultados del Ideb 2025 fueron divulgados oficialmente el 5 de agosto de 2026 (https://undime.org.br/noticia/confira-como-acessar-os-resultados-do-ideb-por-escola/).
+Edición
+Etapa
+Red de Enseñanza
+Valor
+Fuente
+Confianza
+2019
+Anos Iniciais (1.º-5.º)
+Pública
+5,1 (meta 4,9 alcanzada)
+https://www.qedu.org.br/cidade/5409-caico/ideb
+[MEDIA]
+2023
+Anos Iniciais (1.º-5.º)
+Pública
+5,4
+https://cidades.ibge.gov.br/brasil/rn/caico/panorama
+[ALTA]
+2023
+Anos Finais (6.º-9.º)
+Pública
+4,2
+https://cidades.ibge.gov.br/brasil/rn/caico/panorama
+[ALTA]
+2025
+Anos Iniciais (1.º-5.º)
+Municipal
+5,8
+https://agorarn.com.br/ultimas/ideb-de-mossoro-dispara-e-municipio-lidera/
+[ALTA] (prensa reproduce tabla Inep)
+2025
+Anos Iniciais (1.º-5.º)
+Sin especificar
+5,9 (aprendizaje $5,95 \times$ flujo $0,98$)
+https://qedu.org.br/uf/24-rio-grande-do-norte/ideb/municipios
+[BAJA] (fragmento incompleto; ver Sec. 9)
+2025
+Anos Finais (6.º-9.º)
+—
+No encontrado
+—
+—
+2025
+Ensino Médio
+—
+No encontrado
+—
+—
+Advertencia Metodológica: El dato de 2023 (5,4, IBGE) corresponde a red pública (municipal + estatal), mientras que el dato de 2025 (5,8, Agora RN) corresponde exclusivamente a red municipal. No son directamente comparables para calcular variaciones porcentuales.
+3.3 Comparativa Regional y Nacional Ideb 2025 (Anos Iniciais, Red Municipal)
+Ranking de los 15 mayores municipios de RN (Ideb 2025, red municipal, Anos Iniciais): Mossoró 6,1 · Apodi 5,9 · Caicó 5,8 · Currais Novos 5,8 · Parnamirim 5,1 · São José de Mipibu 5,1 · Extremoz 5,0 · Nova Cruz 5,0 · Macaíba 4,9 · Assú 4,8 · Natal 4,8 · Santa Cruz 4,8 · São Gonçalo do Amarante 4,7 · João Câmara 4,6 · Ceará-Mirim 4,4 (https://agorarn.com.br/ultimas/ideb-de-mossoro-dispara-e-municipio-lidera/) [ALTA/MEDIA].
+Mayores notas de RN en 2025 (municipios del Seridó / 10.ª DIREC): Ipueira 7,3; Ouro Branco 6,9; Cruzeta 6,8; São João do Sabugi 6,8; Jaçanã 6,6.
+Medias de referencia Ideb 2025 (https://www.amunes.org.br/noticias/4152/ideb-2025-redes-municipais-registram-o-melhor-resultado-da-serie-historica-nos-anos-iniciais y Nota Oficial Inep https://download.inep.gov.br/ideb/resultados/nota_informativa_ideb_2025.pdf) [MEDIA]:
+Rio Grande do Norte (Anos Iniciais, red municipal): 5,5.
+Brasil (Anos Iniciais): 6,0 (2023) $\rightarrow$ 6,3 (2025) [total] | Redes municipales: 5,8 $\rightarrow$ 6,1.
+Brasil (Anos Finais): 5,0 (2023) $\rightarrow$ 5,3 (2025) [total] | Redes municipales: 4,6 $\rightarrow$ 4,9.
+Brasil (Ensino Médio): 4,3 (2023) $\rightarrow$ 4,5 (2025) [total].
+3.4 Alfabetización e ICA (Indicador Criança Alfabetizada)
+Población de 15 años o más (Censo IBGE 2022):
+Tasa de alfabetización de Caicó: 88,92 % [MEDIA] (reproducida por prensa local a partir de IBGE: https://saibamais.jor.br/2024/05/veja-as-cidades-com-melhor-e-pior-desempenho-de-alfabetizacao-no-rn/).
+Tasa de analfabetismo implícita: 11,08 % ($100 - 88,92$, cálculo propio; la fuente secundaria no publica el valor directamente) [MEDIA].
+Contexto en RN (Censo 2022): Parnamirim 94,91 %; Natal 93,36 %; Extremoz 91,38 %; Mossoró 89,96 %; São Gonçalo do Amarante 89,82 %; Caicó 88,92 %.
+Referencia Brasil (Censo 2022): Alfabetización 93,0 % / Analfabetismo 7,0 % [ALTA] (https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/22321-alfabetizacao.html).
+ICA (Indicador Criança Alfabetizada — % alfabetizado al final del 2.º año):
+Brasil: 56 % (2023) $\rightarrow$ 59,2 % (2024) [ALTA] (https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/07/indicador-alfabetizacao-avanca-e-atinge-59-2-em-2024).
+Rio Grande do Norte: 37 % (2023) $\rightarrow$ 39 % (2024); metas estatales: 44 % (2024), 51 % (2025), 80 % (2030) [ALTA] (https://www.gov.br/mec/pt-br/crianca-alfabetizada/monitoramento-e-avaliacao/rn_ica2024.pdf).
+Caicó (ICA): Dato numérico no encontrado en esta compilación (consultar portal Inep / QEdu; el Inep divulgó resultados municipales el 31/03/2026: https://pi.undime.org.br/noticia/01-04-2026-23-31-inep-divulga-dados-do-indicador-crianca-alfabetizada-por-municipio).
+3.5 Gasto Educativo (Dato Histórico)
+Agregador Meu Município (https://meumunicipio.org.br/eficiencia-gastos/2402006-Caico-RN?exercicio=2019) reporta un gasto medio de R$ 7.079,76 por alumno (período histórico ~2019, 32 escuelas municipales y 5.119 matrículas) [BAJA: año exacto del cálculo no confirmado].
+4. Oferta Escolar — Censo Escolar 2025 (Inep / QEdu)
+Fuente principal: QEdu / Inep (https://qedu.org.br/municipio/2402006-caico) [MEDIA: extraído de fragmentos; ver inconsistencias en Sec. 9].
+4.1 Escuelas por Dependencia Administrativa (Censo Escolar 2025)
+Total Escuelas
+Red Federal
+Red Estadual
+Red Municipal
+Red Privada
+Total Red Pública
+60
+1 (IFRN)
+14
+31
+14
+46
+4.2 Resumen Red Pública (QEdu 2025)
+Escuelas públicas: 46 | Alumnos matriculados (etapas regulares): 6.347 | Profesores: 421 [MEDIA].
+Nota de verificación: $6.347 = 2.245 \text{ (Anos Iniciais)} + 2.057 \text{ (Anos Finais)} + 2.045 \text{ (Ensino Médio)}$, por lo que esta suma excluye Educación Infantil, EJA y Educación Especial.
+4.3 Matrículas por Etapa y Año/Curso (Censo Escolar 2025)
+Etapa Educativa
+Matrículas
+Desglose por Curso / Observaciones
+Confianza
+Pré-escola (4 a 5 años)
+776
+(Creche 0-3 años sin cifra numérica extraída en QEdu; ver primeirainfanciaemdados.org.br/municipios/caico-rn/)
+[MEDIA]
+Ensino Fundamental — Anos Iniciais
+2.245
+1.º: 385 | 2.º: 450 | 3.º: 417 | 4.º: 494 | 5.º: 499 (Suma = 2.245 ✓)
+[MEDIA]
+Ensino Fundamental — Anos Finais
+2.057
+6.º: 583 | 7.º: 492 | 8.º: 501 | 9.º: 481 (Suma = 2.057 ✓)
+[MEDIA]
+Ensino Médio (Secundaria Obligatoria)
+2.045
+1.º: 707 | 2.º: 628 | 3.º: 548 (Suma = 1.883 ✗; diferencia de 162 sin explicar, posible técnico integrado/4.º año; ver Sec. 9)
+[MEDIA]
+EJA (Educação de Jovens e Adultos)
+722
+Alfabetización, Fundamental y Médio nocturno/acelerado
+[MEDIA]
+Educación Especial (inclusión/escuelas)
+437
+Atención en aulas regulares (AEE) y escuela especializada (APAE)
+[MEDIA]
+4.4 Contexto Estatal del Censo Escolar 2025 (RN)
+En Río Grande del Norte, las matrículas de educación básica cayeron un $-3,4\,\%$ entre 2024 (783.190) y 2025 (756.434): red estatal 196.764 $\rightarrow$ 182.461; redes municipales 412.035 $\rightarrow$ 392.208; red privada 157.325 $\rightarrow$ 167.393 ($+6,4\,\%$) (https://www.gilbertodias.com.br/2026/03/censo-escolar-aponta-queda-das.html) [MEDIA].
+5. Análisis Detallado por Niveles de Educación Básica
+5.1 Educación Infantil (Educação Infantil — 0 a 5 años)
+Enfoque Pedagógico: Desarrollo integral bajo los ejes de la BNCC (interações e brincadeiras). Alimentación escolar supervisada por nutricionistas bajo el PNAE (2 a 4 comidas diarias en guarderías a tiempo parcial o integral con productos de la agricultura familiar del Seridó).
+Gestión de Vacantes: La Prefeitura de Caicó publica convocatorias anuales de matrícula y vacantes remanentes (https://caico.rn.gov.br/informa/1479/rede-municipal-de-educa-o-de-caic-anuncia-vagas-re) [ALTA].
+Centros Municipales Exclusivos (Creches y EMEIs) [ALTA/MEDIA]:
+CEMEI Dona Oscarina de Oliveira Torres (Bairro Paraíba)
+Creche Municipal Gente Feliz (Bairro Boa Passagem)
+Creche Municipal Mundo Mágico (Bairro Maynard)
+Creche Municipal Profª. Ana Edith de Medeiros (Bairro Walfredo Gurgel)
+Creche / EMEI Nossa Senhora do Rosário (Centro / Penedo)
+EMEI São José (Bairro Castelo Branco)
+(Varias escuelas municipales urbanas y rurales de Ensino Fundamental también ofertan aulas de Pré-escola de 4 y 5 años).
+Centros Infantiles Privados de Referencia [BAJA: agregador comercial]: Externato Santa Clara, Externato Tia Hilda, Externato Arco-Íris, Centro de Educação Ágape, Escola SESC Caicó.
+5.2 Educación Primaria (Ensino Fundamental — 6 a 14 años)
+Anos Iniciais (1.º al 5.º año): Gestión predominantemente municipal (2.245 matrículas en 2025). Enfoque prioritario en el ciclo de alfabetización hasta el 2.º año mediante el programa estatal MAIS PAIC / Regime de Colaboração RN y el Compromiso Nacional Criança Alfabetizada (CNCA). Ideb municipal 2025: 5,8 ([ALTA]).
+Anos Finais (6.º al 9.º año): Gestión compartida entre red municipal y red estatal (2.057 matrículas en 2025). Estrategias de refuerzo en contraturno, Busca Ativa Escolar (UNICEF) para prevención del abandono y participación en olimpiadas nacionales (OBMEP, OBA). Ideb público 2023: 4,2 ([ALTA]).
+Red de Escuelas Municipales Urbanas (SEME Caicó — 31 escuelas municipales totales en Censo 2025) [MEDIA]:
+E.M. Maria Leonor Cavalcanti (Centro) · E.M. Presidente Kennedy (Centro) · E.M. Auta de Souza (Barra Nova) · E.M. Coronel Paulino Barcelos (Paraíba) · E.M. Prof. Mateus Viana (Boa Passagem) · E.M. Irmã Maria Assunta Vieira (Paraíba) · E.M. Ivanor Pereira (João XXIII) · E.M. Prof. José Gurgel de Araújo (Walfredo Gurgel) · E.M. Profª. Maria Bernadete Marques de Souza Ginane (Recreio) · E.M. Severina Brito da Silva (Maynard) · E.M. Severina Ernestina Abigail (Itans) · E.M. Frei Damião (Frei Damião) · E.M. Hermann Gmeiner (Soledade) · E.M. Maria Fernandes da Silva (Castelo Branco) · E.M. Olívia Pereira Rodrigues (Samanaú) · E.M. Prof. Raimundo Guerra (Penedo) · E.M. Profª. Inah de Medeiros Dantas (Penedo) · E.M. Walfredo Gurgel (Walfredo Gurgel).
+Red Municipal Rural: Centros Municipais de Ensino Rural atendiendo las comunidades de Laginhas, Palma, Perímetro Irrigado Sabugi, Umari, Várzea Alegre y Barra da Espingarda, con transporte escolar rural gratuito.
+Escuelas Estatales con Ensino Fundamental: E.E. Monsenhor Walfredo Gurgel, E.E. Senador Dinarte Mariz, E.E. Dom José Adelino Dantas, E.E. Padre Edmund Kagerer, E.E. Prof. Antônio Aladim de Araújo, E.E. Profª. Rosa de Lima Bezerra, E.E. Vilagran Cabrita, E.E. Zuza Januário, además de unidades estatales rurales en Laginhas, Palma y Sabugi.
+5.3 Secundaria Obligatoria (Ensino Médio — 15 a 17 años)
+Cobertura: 2.045 matrículas en 2025 ([MEDIA]). Preparación para el examen nacional ENEM / SISU y formación ciudadana/profesional.
+Modalidades de Oferta:
+1. Ensino Médio Regular (Parcial): Turnos matutino, vespertino y nocturno bajo la estructura del Novo Ensino Médio (Formación General Básica + Itinerarios Formativos).
+2. Ensino Médio en Tempo Integral (EETI): Jornada ampliada con enfoque en Proyecto de Vida, Protagonismo Juvenil y laboratorios (destaca el Centro Educacional José Augusto - EETIJA).
+3. Ensino Médio Integrado a la Educación Profesional (Técnico Integrado): Ofertado por la red federal (IFRN - Campus Caicó, 4 años de duración).
+Principales Centros de Ensino Médio en Caicó:
+1. Red Pública Estatal (10.ª DIREC — 14 escuelas estatales en Caicó en 2025): CE José Augusto (EETIJA - Tempo Integral), E.E. Profª. Calpúrnia Caldas de Amorim (EECCAM), E.E. Monsenhor Walfredo Gurgel, E.E. Senador Dinarte Mariz, E.E. Dom José Adelino Dantas, E.E. Prof. Antônio Aladim de Araújo.
+2. Red Pública Federal: IFRN - Campus Caicó (Rodovia RN 288, s/n - Nova Caicó).
+3. Red Privada (14 escuelas privadas totales en Censo 2025): Colégio Diocesano Seridoense (CDS), Educandário Santa Teresinha, Centro Educacional Integrado do Seridó (CEIS), Colégio Santa Clara.
+5.4 Modalidades Transversales y Gestión Administrativa
+Educación Especial e Inclusiva: 437 matrículas ([MEDIA]). Salas de Recursos Multifuncionales (Atendimento Educacional Especializado - AEE) en escuelas públicas y atención multidisciplinar en la Escola Prof. Severino Lopes da Silva - APAE de Caicó-RN.
+Educación de Jóvenes y Adultos (EJA): 722 matrículas ([MEDIA]). Oferta nocturna municipal (Ensino Fundamental) y estatal a través del CEJA Senador Guerra (Ensino Fundamental y Ensino Médio).
+Órganos de Gestión de Educación Básica:
+Secretaria Municipal de Educação (SEME Caicó): Secretario Sérgio André de Araújo ([ALTA], aviso oficial 2025). Av. Coronel Martiniano, 993 - Centro Administrativo, Caicó - RN. Portal: https://caico.rn.gov.br.
+10.ª Diretoria Regional de Educação e Cultura (10.ª DIREC - Gobierno de RN): Sede en Caicó (Rua Monsenhor Severiano, 150 - Penedo) [ALTA]. Coordina la red estatal en Caicó y municipios vecinos del Seridó (circunscripción histórica de 11 municipios: Caicó, Ipueira, Jardim de Piranhas, Jardim do Seridó, Jucurutu, Ouro Branco, São Fernando, São João do Sabugi, São José do Seridó, Serra Negra do Norte y Timbaúba dos Batistas [MEDIA]).
+6. Educación Superior
+Caicó es el principal polo universitario del interior centro-sur de Río Grande del Norte.
+6.1 UFRN — Centro de Ensino Superior do Seridó (CERES), Campus Caicó
+Fuentes: Portal Institucional CERES (https://ceres.ufrn.br/institucional/sobre_inicial) y Relatório de Gestão do CERES-UFRN 2025 (https://arquivos.info.ufrn.br/arquivos/20260791620ea518185004e557195d3686/Relatrio_de_gesto_do_CERES-UFRN_em_2025.pdf) [ALTA].
+Trayectoria y Comunidad (2025): 52 años de actividad académica (origen en marzo de 1974). Comunidad de ~2.050 personas ($\approx 1.850$ estudiantes activos de grado y posgrado + $\approx 200$ servidores docentes, técnicos y tercerizados) procedentes principalmente de municipios de RN y Paraíba [ALTA].
+Estructura Departamental (6 departamentos): Geografía (DGC), Historia (DHC), Ciencias Exactas y Aplicadas (DCEA), Educación (DEDUC), Derecho (DIR) y Computación y Tecnología (DCT).
+Grados Ofertados (10 cursos vigentes desde 2026.1) [ALTA]:
+1. Derecho (Bacharelado) — Tasa de éxito SIGAA 2025.2: 94,80 %
+2. Ciencias Contables (Bacharelado) — Tasa de éxito 2025.2: 93,84 %
+3. Sistemas de Información (Bacharelado) — Tasa de éxito 2025.2: 91,47 %
+4. Pedagogía (Licenciatura) — Tasa de éxito 2025.2: 97,30 %
+5. Geografía (Licenciatura) — Tasa de éxito 2025.2: 91,64 %
+6. Geografía (Bacharelado) — Tasa de éxito 2025.2: 91,05 %
+7. Historia (Licenciatura — turnos mañana/tarde 91,86 % y noche 94,61 %) (Nota: Historia Bacharelado figura en proceso de extinción según auditoría interna)
+8. Matemática (Licenciatura) — Tasa de éxito 2025.2: 80,52 %
+9. Ingeniería de Computación (Bacharelado — nuevo curso vía SISU desde 2026.1, 40 plazas/año) [ALTA]
+10. Arqueología (Bacharelado — nuevo curso vía SISU desde 2026.1, 25 plazas/año) [ALTA]
+Posgrado Stricto Sensu (Maestrías y Doctorados) [ALTA]:
+1. GEOCERES: Maestría Académica en Geografía.
+2. GEOPROF: Maestría y Doctorado Profesional en Enseñanza de la Geografía.
+3. PPGHC: Maestría Académica en Historia de los Sertones.
+4. PPGENAP: Maestría Académica en Metodologías de Enseñanza y Procesos de Aprendizaje.
+5. PROFCOMP: Maestría Profesional en Enseñanza de la Computación en Red Nacional (aprobado en 2025).
+Indicadores de Investigación y Extensión (2025): 31 proyectos de investigación, 39 becas de iniciación científica, 49 proyectos de monitoría (87 monitores) y 368 acciones de extensión [ALTA].
+6.2 UFRN — Escola Multicampi de Ciências Médicas (EMCM), Sede Caicó
+Grado Ofertado: Medicina (Bacharelado) en la EMCM, unidad académica distinta al CERES dentro del catálogo oficial de la UFRN (https://ufrn.br/academico/ensino/graduacao/cursos) [ALTA].
+6.3 UERN — Campus Avançado de Caicó (CAC)
+Fuente: Lista Oficial de Cursos de Graduación UERN (https://portal.uern.br/proeg/wp-content/uploads/2025/09/ANEXO-I-LISTA-DOS-CURSOS-DE-GRADUACAO.pdf) [ALTA].
+Grados Presenciales Vigentes:
+1. Filosofía (Licenciatura — funciona desde 2002).
+2. Enfermería (Bacharelado — creado en 2006).
+3. Odontología (Bacharelado — creado en 2006; cuenta con clínicas escuela de atención comunitaria).
+Otros registros UERN Caicó: Curso tecnológico en Gestão Pública (aprobado por resolución en 2014, vigencia actual no verificada [BAJA]); curso EaD Gestão na Educação Profissional e Tecnológica vinculado al Depto. de Filosofía (Resolución 04/2026-CONSEPE [BAJA]).
+6.4 Educación Superior Privada y Polos EAD
+Institución Privada Presencial: Faculdade Católica Santa Teresinha (FCST).
+Polos EAD Activos en Caicó: UFRN/SEDIS (polo de apoyo a distancia), Anhanguera EAD, Unopar, Uniasselvi, Estácio, Unicesumar, Cruzeiro do Sul Virtual, UNIP, UNINTER [MEDIA/BAJA].
+7. Educación Profesional y Técnica
+7.1 IFRN — Instituto Federal do Rio Grande do Norte (Campus Caicó)
+Naturaleza y Ubicación: Institución Pública Federal gratuita, ubicada en Rodovia RN 288, s/n - Nova Caicó. Portal: https://portal.ifrn.edu.br.
+Áreas Tecnológicas Prioritarias (Edital n.º 51/2025-DG/CA): Eletrotécnica, Informática, Têxtil, Vestuário, Moda y Física [ALTA].
+Articulación con la Economía Local: El bordado de Caicó cuenta con Sello de Indicación Geográfica (IG) desde 2018, y el municipio es un polo nacional de confección (gorras y textil), articulado directamente con las carreras técnicas del IFRN [MEDIA].
+Oferta Formativa Documentada:
+Técnico Integrado (Bachillerato + Técnico — 4 años): Informática, Informática para Internet, Eletrotécnica, Têxtil, Vestuário [MEDIA].
+Técnico Subsequente (Post-bachillerato — 2 años): Informática, Eletrotécnica, Têxtil, Vestuário [MEDIA].
+Nivel Superior / Posgrado y Cualificación (FIC): Licenciatura en Física, Tecnología en Diseño de Moda, Especialización en Educación del Campo – Saberes da Terra (400 h), y cursos cortos FIC (ej. Modelista y Costurera en General, 180 h) [BAJA-MEDIA: verificar oferta activa por semestre en portal.ifrn.edu.br].
+7.2 Otras Entidades de Formación Profesional
+SENAC Caicó (comercio, servicios, gestión, informática) y SENAI (unidades móviles e industria textil/eléctrica) [MEDIA].
+8. Contexto Estatal y Regional (Rio Grande do Norte / Seridó)
+En el Ideb 2025 (Anos Iniciais, red municipal), Caicó (5,8) se ubicó por encima de la media estatal de RN (5,5), empatado con Currais Novos (5,8) en el tercer puesto entre los 15 mayores municipios del estado, aunque por debajo de la media nacional (6,1) y de municipios vecinos más pequeños de la región del Seridó como Ipueira (7,3), Ouro Branco (6,9), Cruzeta (6,8) y São João do Sabugi (6,8) [ALTA/MEDIA].
+En alfabetización infantil (ICA 2024), Rio Grande do Norte registró un 39 %, por debajo de la media nacional (59,2 %), impulsando programas estatales de cooperación con los municipios del Seridó [ALTA].
+9. Discrepancias e Inconsistencias Detectadas (No Resueltas)
+El Agente IA debe tener presentes estas 8 divergencias entre fuentes y nunca presentarlas como datos homogéneos:
+1. Ideb 2025 (Anos Iniciais): 5,8 (Agora RN, especificado como red municipal) frente a 5,9 en un fragmento de QEdu ($5,95 \times 0,98$, sin especificar red ni año exacto). Posibles causas: diferencia entre red municipal y red pública total, o redondeo.
+2. Tasa de Analfabetismo: Censo IBGE 2022 arroja 11,08 % implícito para población de 15+ años (88,92 % alfabetizada). Una tesis de UNICAMP cita 3,89 % según IBGE 2010 sin precisar grupo de edad; no usar la cifra de 2010 como tasa de población adulta.
+3. Matrículas de Ensino Médio (Censo 2025): El bloque por etapas de QEdu indica 2.045 alumnos, mientras que la suma por año ($707 + 628 + 548$) da 1.883 (diferencia de 162 alumnos, probablemente matriculados en el 4.º año del Técnico Integrado o modalidades no seriadas).
+4. Número de Grados en UFRN-CERES: El Relatório de Gestão 2025 lista 9 grados activos (incluyendo História Bacharelado, marcado para extinción con 11/5 matrículas en componentes), mientras que la web institucional declara 10 grados tras incorporar Engenharia de Computação y Arqueologia en 2026.1. No usar Wikipedia para listar carreras del CERES (contiene cursos inexistentes en Caicó como Educación Física, Química o Biología).
+5. Estudiantes vs. Matrículas en CERES: El informe declara $\approx 1.850$ estudiantes activos en 2025, pero la suma de "matrículas" por curso en 2025.1 alcanza 7.639 (corresponde a inscripciones en asignaturas/componentes curriculares, no a personas).
+6. Total de Cursos en IFRN-Caicó: La mención a "15 cursos gratuitos" proviene del subdominio portal-treinamento.ifrn.edu.br (posible entorno de pruebas), por lo que debe contrastarse con portal.ifrn.edu.br.
+7. Población Estimada (63.338 hab.): Un fragmento indexado del IBGE la atribuye a 2025 y otro a 2026.
+8. Escuelas Municipales: 32 escuelas / 5.119 matrículas en el agregador Meu Município (ejercicio ~2019) frente a 31 escuelas municipales en el Censo Escolar 2025 (QEdu).
+10. Datos No Encontrados (Lagunas de la Base)
+Si el usuario consulta por alguno de los siguientes puntos, el Agente debe indicar que no están disponibles en esta base y remitir a la Sección 12:
+Resultado municipal específico de Caicó en el ICA 2024 / 2025 (Indicador Criança Alfabetizada).
+Ideb 2025 de Anos Finais, Ensino Médio, red estatal en Caicó y desglose por escuela individual (disponibles en los informes "Aqui Tem MEC" / portal Inep).
+Proficiencia media en Saeb 2025 y notas del ENEM desglosadas por escuela.
+Tasas recientes de distorsión edad-curso, aprobación y abandono escolar (2024/2025).
+IDHM-Educación desagregado (solo consta el IDHM global 0,710 de 2010).
+Cifras exactas de matrícula en Creche (0-3 años), IFRN-Caicó y UERN-Caicó.
+Presupuesto educativo municipal vigente y porcentaje de infraestructura escolar (bibliotecas, laboratorios, acceso a internet en QEdu).
+11. Glosario de Términos Educativos Brasileños
+Ideb: Índice de Desenvolvimento da Educação Básica (0-10, bienal; combina notas del Saeb y tasa de aprobación).
+Saeb: Sistema de Avaliação da Educação Básica (evaluaciones estandarizadas aplicadas en 2.º, 5.º y 9.º año de Fundamental y 3.º de Médio).
+Censo Escolar: Levantamiento estadístico anual del Inep sobre escuelas, matrículas, docentes e infraestructura.
+ICA: Indicador Criança Alfabetizada (porcentaje de niños alfabetizados al finalizar el 2.º año de Primaria).
+Educação Infantil (Creche / Pré-escola): 0 a 3 años (Creche) y 4 a 5 años (Pré-escola, obligatoria).
+Ensino Fundamental (Anos Iniciais / Anos Finais): Educación primaria/básica obligatoria de 9 años (1.º-5.º año y 6.º-9.º año).
+Ensino Médio: Educación secundaria superior / bachillerato obligatorio (3 años, 15-17 años).
+EJA: Educação de Jovens e Adultos (modalidad para personas que no concluyeron la educación básica en la edad regular).
+AEE: Atendimento Educacional Especializado (apoyo pedagógico inclusivo en contraturno).
+DIREC: Diretoria Regional de Educação e Cultura (órgano regional de la Secretaría de Educación del Estado de RN; Caicó es sede de la 10.ª DIREC).
+CERES / EMCM / CAC / IFRN: Centro de Ensino Superior do Seridó (UFRN), Escola Multicampi de Ciências Médicas (UFRN), Campus Avançado de Caicó (UERN) e Instituto Federal do Rio Grande do Norte.
+SISU / ENEM: Exame Nacional do Ensino Médio y Sistema de Seleção Unificada (acceso a universidades públicas).
+12. Fuentes Primarias para Consulta en Vivo (Recomendadas al Agente)
+IBGE Cidades (Caicó): https://cidades.ibge.gov.br/brasil/rn/caico/panorama
+IBGE SIDRA (API Censo 2022): https://sidra.ibge.gov.br
+Inep — Ideb y Saeb 2025: https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb
+Inep — Nota Informativa Ideb 2025: https://download.inep.gov.br/ideb/resultados/nota_informativa_ideb_2025.pdf
+Inep — Censo Escolar: https://www.gov.br/inep
+QEdu (Municipio de Caicó): https://qedu.org.br/municipio/2402006-caico
+MEC — Indicador Criança Alfabetizada: https://www.gov.br/mec/pt-br/crianca-alfabetizada/monitoramento-e-avaliacao/rn_ica2024.pdf
+Primeira Infância em Dados (Caicó): https://primeirainfanciaemdados.org.br/municipios/caico-rn/
+Prefeitura Municipal de Caicó: https://caico.rn.gov.br
+UFRN — CERES (Caicó): https://ceres.ufrn.br
+UERN — Portal Institucional: https://portal.uern.br
+IFRN — Portal Institucional: https://portal.ifrn.edu.br
+13. Registro Completo de Fuentes Consultadas
+1. https://cidades.ibge.gov.br/brasil/rn/caico/panorama
+2. https://www.ibge.gov.br/cidades-e-estados/rn/caico.html
+3. https://agorarn.com.br/ultimas/ideb-de-mossoro-dispara-e-municipio-lidera/
+4. https://qedu.org.br/municipio/2402006-caico
+5. https://qedu.org.br/uf/24-rio-grande-do-norte/ideb/municipios
+6. https://www.qedu.org.br/cidade/5409-caico/ideb
+7. https://undime.org.br/noticia/confira-como-acessar-os-resultados-do-ideb-por-escola/
+8. https://www.amunes.org.br/noticias/4152/ideb-2025-redes-municipais-registram-o-melhor-resultado-da-serie-historica-nos-anos-iniciais
+9. https://download.inep.gov.br/ideb/resultados/nota_informativa_ideb_2025.pdf
+10. https://saibamais.jor.br/2024/05/veja-as-cidades-com-melhor-e-pior-desempenho-de-alfabetizacao-no-rn/
+11. https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/22321-alfabetizacao.html
+12. https://www.gov.br/mec/pt-br/crianca-alfabetizada/monitoramento-e-avaliacao/rn_ica2024.pdf
+13. https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/07/indicador-alfabetizacao-avanca-e-atinge-59-2-em-2024
+14. https://pi.undime.org.br/noticia/01-04-2026-23-31-inep-divulga-dados-do-indicador-crianca-alfabetizada-por-municipio
+15. https://caico.rn.gov.br/informa/1479/rede-municipal-de-educa-o-de-caic-anuncia-vagas-re
+16. https://www.gilbertodias.com.br/2026/03/censo-escolar-aponta-queda-das.html
+17. https://arquivos.info.ufrn.br/arquivos/20260791620ea518185004e557195d3686/Relatrio_de_gesto_do_CERES-UFRN_em_2025.pdf
+18. https://ceres.ufrn.br/institucional/sobre_inicial
+19. https://www.ceres.ufrn.br/noticias/67682802/novos-cursos-de-graduacao-do-ceres-ufrn-engenharia-de-computacao-e-arqueologia
+20. https://ufrn.br/academico/ensino/graduacao/cursos
+21. https://portal.uern.br/proeg/wp-content/uploads/2025/09/ANEXO-I-LISTA-DOS-CURSOS-DE-GRADUACAO.pdf
+22. https://periodicos.ufpe.br/revistas/revistaenfermagem/article/download/6896/6145/12005
+23. https://portal.ifrn.edu.br/documents/22224/Edital_n_51-2025_-_DG-CA-ce99e9ef70d44456a5a226ac92575ddc.pdf
+24. https://portal-treinamento.ifrn.edu.br/campus/caico/
+25. https://www.escol.as/80577-ifrn-campus-caico
+26. https://revistas.udesc.br/index.php/ensinarmode/article/download/22831/15045
+27. https://meumunicipio.org.br/eficiencia-gastos/2402006-Caico-RN?exercicio=2019
